@@ -13,10 +13,11 @@ You can find all querys Bungie has to offer [here](https://bungie-net.github.io/
 For example if you want to search for user-informations only by the display name, you search for the query in the [Bungie.Net API](https://bungie-net.github.io/multi/index.html).
 In this example it would be this static function:
 ```
-Destiny_2_Interface.Response.User.SearchDestinyPlayer.GetUser("[API-KEY-HERE]", "SomeDisplayName")
+Destiny_2_Interface.Response.User.SearchDestinyPlayer.GetUser()
 ```
 
-An example-code would look like this:
+The response would be a response with the data type.
+An example-code for [this query](https://bungie-net.github.io/multi/operation_get_Destiny2-SearchDestinyPlayer.html#operation_get_Destiny2-SearchDestinyPlayer) would look like this:
 ```
 string displayName = "SomeDisplayName";
 Response<UserInfoCard[]> user = SearchDestinyPlayer.GetUser("[API-KEY-HERE]", displayName);
