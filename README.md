@@ -20,7 +20,7 @@ The response would be a response with the data type.
 An example-code for [this query](https://bungie-net.github.io/multi/operation_get_Destiny2-SearchDestinyPlayer.html#operation_get_Destiny2-SearchDestinyPlayer) would look like this:
 ```
 string displayName = "SomeDisplayName";
-Response<UserInfoCard[]> user = SearchDestinyPlayer.GetUser("[API-KEY-HERE]", displayName);
+Response<UserInfoCard[]> user = SearchDestinyPlayer.GetUser("[API-KEY-HERE]", BungieMembershipType.Steam, displayName);
 ```
 
 ## Contributing
