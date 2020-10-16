@@ -24,7 +24,6 @@ namespace Destiny_2_Interface.Query.Destiny2
                 }
             }
             string content = HttpContextHelper.GetContent(apiKey, url);
-            Console.WriteLine(content);
             return Newtonsoft.Json.JsonConvert.DeserializeObject<Response<DestinyProfileResponse>>(content);
         }
     }
