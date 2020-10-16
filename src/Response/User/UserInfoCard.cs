@@ -6,6 +6,8 @@ namespace Destiny_2_Interface.Response.User
     {
         public string SupplementalDisplayName { get; set; }
         public string IconPath { get; set; }
+        public int CrossSaveOverwrite { get; set; }
+        public BungieMembershipType[] ApplicableMembershipTypes { get; set; }
         public bool IsPublic { get; set; }
         public BungieMembershipType MembershipType { get; set; }
         public long MembershipId { get; set; }
