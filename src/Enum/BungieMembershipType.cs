@@ -20,5 +20,7 @@ namespace Destiny_2_Interface.Enum
         TigerDemon = 10,
         [Description("Bungie")]
         BungieNext = 254,
+        [Description("All")]
+        All = -1,
     }
 }
